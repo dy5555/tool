@@ -26,6 +26,12 @@ this.Button02_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
 	alert("sdfasdfadsf");
 };
+
+
+this.Button05_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	aaaaaaaa;
+};
 ]]></Script>
   </Form>
 </FDL>
