@@ -8,7 +8,7 @@
         <Button id="Button02" taborder="2" text="Button02" left="72" top="48" width="116" height="60" onclick="Button02_onclick"/>
         <Button id="Button03" taborder="3" text="Button03" left="200" top="336" width="132" height="64"/>
         <Button id="Button04" taborder="4" text="Button04" left="569" top="149" width="172" height="175"/>
-        <Combo id="Combo00" taborder="5" text="Combo00" left="247" top="480" width="431" height="125" onitemchanged="Combo00_onitemchanged"/>
+        <Button id="Button05" taborder="5" text="Button05" left="392" top="354" width="89" height="332" onclick="Button05_onclick"/>
       </Layout>
     </Layouts>
     <Script type="xscript5.1"><![CDATA[
@@ -28,9 +28,10 @@ this.Button02_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	alert("sdfasdfadsf");
 };
 
-this.Combo00_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+
+this.Button05_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	aaaa;
+	aaaaaaaa;
 };
 ]]></Script>
   </Form>
