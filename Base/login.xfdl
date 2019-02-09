@@ -7,6 +7,7 @@
         <Button id="Button01" taborder="1" text="눌러라" left="308" top="40" width="208" height="50" onclick="Button01_onclick"/>
         <Button id="Button02" taborder="2" text="Button02" left="72" top="48" width="116" height="60" onclick="Button02_onclick"/>
         <Button id="Button03" taborder="3" text="Button03" left="200" top="336" width="132" height="64"/>
+        <Button id="Button04" taborder="4" text="Button04" left="569" top="149" width="172" height="175"/>
       </Layout>
     </Layouts>
     <Script type="xscript5.1"><![CDATA[
