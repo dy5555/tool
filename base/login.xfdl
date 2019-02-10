@@ -44,7 +44,7 @@ this.login_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
 		transaction("finddeptlist",
 				"svcBase::/finddeptlist.do",
 				"",
-				"gdsDept=gdsDept",
+				"gdsEmp=gdsEmp",
 				"",
 				"callback",
 				false);
