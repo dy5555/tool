@@ -20,6 +20,7 @@ this.Application_onload = function(obj:nexacro.Application,e:nexacro.LoadEventIn
 	this.mainframe.set_visible(false);
 		
 	this.openLoginFormDialog("loginform","LoginForm","Base::login.xfdl",parent);
+	
 
 	
 	 //Base::test.xfdl
