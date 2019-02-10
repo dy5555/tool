@@ -38,6 +38,8 @@
     <Service prefixid="font" type="resource" url="./_resource_/_font_/" version="0" communicationversion="0" cachelevel="session"/>
     <Service prefixid="Base" type="form" cachelevel="session" url="./Base/" version="0" communicationversion="0"/>
     <Service prefixid="SvcBase" type="form" cachelevel="session" url="http://localhost:8282/samsung/" version="0" communicationversion="0"/>
+    <Service prefixid="Emp" type="form" cachelevel="session" url="./Emp/" version="0" communicationversion="0"/>
+    <Service prefixid="SvcEmp" type="form" cachelevel="session" url="http://localhost:8282/samsung/" version="0" communicationversion="0"/>
   </Services>
   <Protocols/>
   <Update/>
