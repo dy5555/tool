@@ -5,16 +5,16 @@
       <Layout height="370" mobileorientation="landscape" width="360">
         <Button id="Button00" taborder="0" text="로그인" left="68" top="303" width="120" height="36" onclick="Button00_onclick"/>
         <Button id="Button01" taborder="1" text="취소" left="198" top="303" width="120" height="36" onclick="Button00_onclick"/>
-        <Edit id="Edit00" taborder="2" left="166" top="75" width="114" height="31"/>
+        <Edit id="deptCode" taborder="2" left="166" top="75" width="114" height="31"/>
         <Static id="Static00" taborder="3" text="부서코드" left="48" top="74" width="105" height="30" background="khaki" textAlign="center" font="bold 12px/normal &quot;맑은 고딕 Semilight&quot;"/>
         <Static id="Static01" taborder="4" text="부서명" left="48" top="115" width="105" height="30" background="khaki" textAlign="center" font="bold 12px/normal &quot;맑은 고딕 Semilight&quot;"/>
         <Static id="Static02" taborder="5" text="사원코드" left="49" top="157" width="105" height="30" background="khaki" textAlign="center" font="bold 12px/normal &quot;맑은 고딕 Semilight&quot;"/>
         <Static id="Static03" taborder="6" text="사원명" left="49" top="198" width="105" height="30" background="khaki" textAlign="center" font="bold 12px/normal &quot;맑은 고딕 Semilight&quot;"/>
         <Static id="Static04" taborder="7" text="비밀번호" left="49" top="238" width="105" height="30" background="khaki" textAlign="center" font="bold 12px/normal &quot;맑은 고딕 Semilight&quot;"/>
-        <Edit id="Edit02" taborder="8" left="168" top="117" width="165" height="31"/>
-        <Edit id="Edit03" taborder="9" left="168" top="155" width="112" height="31"/>
-        <Edit id="Edit04" taborder="10" left="169" top="198" width="165" height="31"/>
-        <Edit id="Edit05" taborder="11" left="169" top="238" width="165" height="31"/>
+        <Edit id="deptName" taborder="8" left="168" top="117" width="165" height="31"/>
+        <Edit id="empCode" taborder="9" left="168" top="155" width="112" height="31"/>
+        <Edit id="empName" taborder="10" left="169" top="198" width="165" height="31"/>
+        <Edit id="password" taborder="11" left="169" top="238" width="165" height="31"/>
         <Button id="Button02" taborder="12" text="검색" left="290" top="75" width="43" height="29" onclick="Button00_onclick"/>
         <Button id="Button03" taborder="13" text="검색" left="290" top="155" width="43" height="29" onclick="Button00_onclick"/>
       </Layout>
@@ -22,7 +22,9 @@
     <Script type="xscript5.1"><![CDATA[
 this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	this.close()
+	
+	gdsEmployee.filter("DEPT_CODE=='"+deptCode.value+"'");
+	dialog("modal","Emp::EmployeeDialog.xfdl",MainFrame,null,"",800,300);
 };
 
 
@@ -32,15 +34,15 @@ this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 this.login_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
 {
 	
-	transaction("login",
-				"svcBase::/login.do",
+	transaction("findemplist",
+				"svcBase::/findemplist.do",
 				"",
 				"gdsDept=gdsDept",
 				"",
 				"callback",
 				false);
-		transaction("login",
-				"svcBase::/login.do",
+		transaction("finddeptlist",
+				"svcBase::/finddeptlist.do",
 				"",
 				"gdsDept=gdsDept",
 				"",
