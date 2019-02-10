@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.0">
+  <Form id="EmployeeDialog" width="420" height="590" titletext="New Form">
+    <Layouts>
+      <Layout height="590" mobileorientation="landscape" width="420">
+        <Grid id="Grid00" taborder="0" left="10" top="10" width="402" height="571"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>
